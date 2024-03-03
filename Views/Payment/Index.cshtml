@@ -1,0 +1,18 @@
+@model Project_Group3.Models.PaymentViewModel
+<form asp-action="CheckOut" method="POST">
+    <div>
+        <label asp-for="@Model.courseId"></label>
+        <input asp-for="@Model.courseId"></input>
+    </div>
+     <div>
+        <label asp-for="@Model.Price"></label>
+        <input asp-for="@Model.Price"></input>
+    </div>  <div>
+        <label asp-for="@Model.courseName"></label>
+        <input asp-for="@Model.courseName"></input>
+    </div>  <div>
+        <label asp-for="@Model.learnerName"></label>
+        <input asp-for="@Model.learnerName"></input>
+    </div>
+    <button>Sumit</button>
+</form>
